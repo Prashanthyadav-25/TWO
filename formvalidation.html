@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["pname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+    
+    
+    var y = document.forms["myForm"]["sname"].value;
+  if (y == "") {
+    alert("Name must be filled out");
+    return false;
+    
+    
+    
+  }
+  }
+}
+</script>
+</head>
+<body>
+
+<form phone="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  phone: <input type="text" name="pname"><br>
+  
+  <form subject="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  subject: <input type="text" name="sname"><br>
+  
+  
+  <label for="sname">select :</label>
+  <input type="radio" id="EMTL" name="select" value="EMTL">
+  <label for="male">EMTL</label>
+  <input type="radio" id="LDIC" name="select" value="ldic">
+  <label for="female">LDIC</label>
+  <input type="radio" id="awp" name="select" value="awp">
+  <label for="other">AWP</label><br>
+  
+  
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
